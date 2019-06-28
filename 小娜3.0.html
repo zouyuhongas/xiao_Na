@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+
+        function Xiaona(){
+                // 小娜提示功能开始
+                this.skr = function(){
+                var asg = prompt('请输入你想要的功能\n'+
+                '1.输入1或者总和计算数字\n'+
+                '2.输入2或者时间得到日期\n'+
+                '3.输入3或者笑话得到笑话\n'+
+                '输入q退出');
+                return asg;
+                }
+                this.jisuan = function(){
+                    // 县弹出计算窗口
+                    var sun = prompt('请输入你要计算的数字.');
+                    var arr = sun.split(',');
+                    var sum = 0;
+                    for(var i=0;i<arr.length;i++){
+                        // 数组要经过数字转换才能显示出来,不然就是没有定义的字符
+                        sum += parseFloat(arr[i]);
+                    }
+                alert(sum);
+                }
+                this.riqi = function(){
+                    //  先提取时间
+                     var date = new Date();
+                     var y = date.getFullYear();
+                     var M = date.getMonth()+1;
+                     var d = date.getDate();
+                     var h = date.getHours();
+                     var m = date.getMinutes();
+                     var s = date.getSeconds();
+                     var time = y+'-' + M + '-' + d +' '+ h + ':' + m + ':' + s;
+                     alert(time);
+                }
+                this.joke =function(){
+                        // 首先要设置一个数组                     
+                     var jokes = ['笑话1','笑话2','笑话3','笑话4','笑话5','笑话6'];
+                        //  把笑话的数组赋值到另一个变量上面,然后,在下一步的赋值上面拿到数组的长度然后随机得到数字放到赋值的变量里面,就得到上面数字对应数组的笑话
+                     var xh =Math.floor(Math.random()*jokes.length);
+                        // 在最后弹出笑话
+                alert(jokes[xh]);
+                     
+                }
+
+        }
+        // 要把整个小娜把它声明了才能可以调用
+        var xiaona = new Xiaona();
+        while(true){
+            // 小娜提示输入
+            var asg = xiaona.skr();
+
+            if(asg =='q'){
+                break;
+            }
+        
+        switch(asg){
+            case '1':
+            case '总和':
+           xiaona.jisuan();
+        //    最后部分要调用函数才能输出
+            break;
+        //    计算部分完成
+
+            case '2':
+            case '时间':
+            xiaona.riqi();
+            break;
+            // 时间部分完成
+            case '3':
+            case '笑话':
+            xiaona.joke();
+            break;
+            // 在最后的后面如果无法识别的字体就用这个属性来提醒用户的输入信息
+            default:
+            alert('你说的我不懂')
+        }
+
+
+
+        }
+
+</script>
+
+
+
+</html>
