@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+   function getInterval(start, end) {
+    var day, hour, minute, second, interval;
+    var date1 = new Date(start);
+    var date2 = new Date(end);
+    start = date1.getTime();
+    end = date2.getTime();
+    interval = end - start;
+    interval /= 1000;
+    day = Math.round(interval / 60 / 60 / 24);
+    hour = Math.round(interval / 60 / 60 % 24);
+    minute = Math.round(interval / 60 % 60);
+    second = Math.round(interval % 60 );
+    return {
+      hour: hour,
+      minute: minute,
+      second: second,
+      day: day
+
+    }  
+  }
+  console.log(getInterval('2010,10,10', '2019,2,30'));  
+
+
+
+
+
+    function dayone(start,end){
+      var day,hour,minute,second,interval;
+      var date1 = new Date(start);
+      var date2 = new Date(end);
+      start = date1.getTime();
+      end = date2.getTime();
+      interval = end - start;
+      interval/=1000;
+      day = Math.round(interval/60 /60 /24);
+      hour = Math.round(interval/60 /60 % 24);
+      minute = Math.round(interval/60 % 60);
+      second = Math.round(interval %60);
+      return{
+        hour:hour,
+        minute:minute,
+        second:second,
+        day:day
+      }
+    }
+    console.log(dayone('2010,10,20','2019,3,3')); 
+
+
+
+
+
+</script>
+
+</html>

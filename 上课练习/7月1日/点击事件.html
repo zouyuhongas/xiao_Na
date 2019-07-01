@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        
+        ul{
+            background: pink;
+        }
+        li{
+            background: yellow;
+        }
+    
+    
+    
+    </style>
+</head>
+<body>
+
+    <input type="button" value="按钮" id="btn">
+    <ul>
+        <li>这是我第1个li</li>
+        <li>这是我第2个li</li>
+        <li>这是我第3个li</li>
+    </ul>
+</body>
+<script>
+
+        let btn = document.querySelector('#btn');
+        let ul = document.querySelector('ul');
+        btn.onclick = function () {
+            let old = ul.innerHTML;
+            ul.innerHTML = old+'<li>狗蛋</li>'
+        }
+
+        ul.onclick = function(e){
+            if(e.target.nodeName ==='LI'){
+                console.log('这是点击li出发的事件')
+            }
+
+        }
+
+
+</script>
+</html>

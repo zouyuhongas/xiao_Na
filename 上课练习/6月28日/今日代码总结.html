@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+  // // 随机整数  [1,10]
+  // var r = Math.random(); // [0,1)
+  // r = r * 10 + 1; // [1,11)
+  // r = Math.floor(r);
+  // // console.log(r);
+
+  // // [10,20]
+  // var r = Math.random(); // [0,1)
+  // r = r * 11 + 10; // [0,11) + 10 == [10,21)
+
+  // [n,m] 之间的整数
+  // var r = Math.floor(Math.random() * (m - n + 1) + n);
+  // [1,10]
+  //         [0,1) * 10 + 1 == [1,11)
+  // var r = Math.random() * (10 - 1 + 1) + 1;
+  // [10,20]
+  //         [0,1) * 11 + 10 == [0,11) + 10 == [10,21)
+  // var r = Math.random() * (20 - 10 + 1) + 10;
+
+
+// // 有个活动在 2019年7月1日开始，7月7日结束
+// var start = new Date(2019,6,1,8); // 注意点： 月份是从0开始的，所以当我们给7月，需要给一个6
+// console.log(start);
+// var end = new Date(2019,6,7,23,59);
+// console.log(end);
+
+// var start = new Date('2019-07-01 8:00:00');
+// console.log(start);
+
+// 第三种给指定日期的方式
+// var date = new Date(总毫秒数);
+
+
+// var date = new Date(1561692936706);
+// console.log(date);
+
+
+// 将时间转换为总的毫秒数
+// 所谓的总毫秒数是从 1970年到指定事件所经过的毫秒数
+// var date = new Date();
+// console.log(date);
+// console.log(date.getTime());
+
+// var start = new Date('2019-07-01');
+// console.log(start.getTime());
+// console.log(date.getTime() > start.getTime());
+
+
+// var date = new Date();
+// console.log(date.valueOf());
+
+
+
+
+
+// 格式化日期 ，得到一个指定格式的日期： yyyy-MM-dd hh:mm:ss
+
+// 给一个指定的日期，算出距离现在有多少天，多少小时，多少分钟，多少秒
+// 自己创建一个指定日期对象
+// 再获取一个当前的日期对象
+// 转换为毫秒相减 - 相差的毫秒数
+// // // 根据时间的进制，进行数量的转换
+// var pick = document.getElementById('pick');
+// // console.log(pick.value);
+// var btn = document.getElementById('btn');
+// btn.onclick = function(){
+//   // console.log(pick.value);
+//   var that = new Date(pick.value);
+//   console.log(that);
+//   //当前的时间
+//   var date = new Date();
+//   // 算出毫秒差
+//   var thatMs = that.getTime();
+//   var dateMs = date.getTime();
+
+//   console.log();
+//   var timeInerval = Math.abs(thatMs - dateMs);
+//   //算出总共差了多少天
+//   var second = Math.floor(timeInerval / 1000);
+//   console.log(second);
+//   var minute = Math.floor(second / 60);
+//   console.log(minute);
+//   // 消失
+//   var hour = Math.floor(minute / 60);
+//   console.log(hour);
+//   var day = Math.floor(hour / 24);
+//   console.log(day);
+//   // 求出余下天数又多少小时
+//   console.log(hour % 24);
+//   // 后面的分钟和秒数 同理
+
+
+
+  // push - 推
+  // push/pop  
+  // 把数组翻转
+  // var arr = [1,2,3,4];
+  // 思路：把arr倒序遍历，把arr的最后一个，作为新数组的第0个
+  // var newArr = [];
+  // for(var i = 3; i >= 0; i--){
+  //   // console.log(arr[i]);
+  //   // newArr[newArr.length] = arr[i];
+  //   newArr.push(arr[i]);
+  // }
+  // console.log(newArr);
+
+  // 思路2： 把最后一个元素和第0个元素调换位置，把倒数第二个和顺数第二个调换，以此类推
+  // 调换的次数是 ： Math.floor(数组长度 / 2) 
+  // var arr = [1, 2, 3, 4];
+  // for (var i = 0; i < Math.floor(arr.length / 2); i++) {
+  //   // 把第一个和倒数第一个调换
+  //   var temp = arr[i];
+  //   arr[i] = arr[arr.length - 1 - i]
+  //   arr[arr.length - 1 - i] = temp;
+
+  //   // 把第二个和倒数第二个调换
+  //   // var temp = arr[1];
+  //   // arr[1] = arr[length - 1 - 1]
+  //   // arr[length - 1 - 1] = temp;
+  // }
+  // console.log(arr);
+
+
+  // var arr = [1, 2, 3, 4];
+  // // 其实js里面已经帮我们封装好了一个用于翻转数组的方法
+  // var res = arr.reverse();
+  // console.log(arr);
+  // console.log(res);
+
+  /*
+    数组.push(元素)
+      作用： 把元素从数组的末尾添加
+      参数： 要放到数组末尾的元素，可以是多个
+      返回值： 新的数组的长度
+  */
+
+// var arr3 = [7,8,9];
+// var length = arr3.push(2,3,4,5);
+// console.log(arr3);
+// console.log(length);
+
+
+// pop - 出栈
+// 数组的pop方法
+// 排队
+// var arr = ['a','b','c','d'];
+// // 把数组末尾的元素取出来
+// var last = arr.pop(); // 这个方法是会把数组的长度变短的
+// console.log(last);
+// console.log(arr);
+
+
+// shift 
+// 排队 - 插队
+// var arr = ['a','b','c','d'];
+// // 把一个或者多个插入到最前面
+// arr.unshift('e');
+// console.log(arr)
+// // 还可以从数组的前面把元素取出来
+// arr.shift();
+// console.log(arr);
+
+
+// 数组的splice方法
+// 用户删除元素
+// var arr = ['a','b','c','d','e'];
+// // 数组.splice(从哪里开始删除，要删除多少个)
+// arr.splice(2,2);
+// console.log(arr);
+
+// 把元素插入到数组的指定为诶之
+// var arr = ['a','b','c','d','e'];
+// //数组.splice(从哪里开始插入,0,插入的元素1,插入的元素2...)
+// arr.splice(3,0,5,7,9)
+// console.log(arr);
+
+// 替换元素
+// var arr = ['a','b','c','d','e'];
+// // 数组.splice(从哪里开始替换，替换多少个,替换的元素有哪些);
+// arr.splice(2,3,5,7,9);
+// console.log(arr);
+
+
+
+// 遍历数组
+// var arr = [1,2,3,4,5];
+// var sum = 0;
+// for(var i =0; i < arr.length; i++){
+//   sum += arr[i];
+// }
+// console.log(sum);
+
+// 数组自带一个可以遍历的方法
+// 数组.forEach(function(元素,索引){
+//   只需要关注遍历的逻辑，不需要关注怎么遍历
+// });
+// var arr = ['a','b','c','d'];
+// var arr = [1,2,3,4,5];
+// var sum = 0;
+// var res = arr.forEach(function(e,i){
+//   // console.log(e);
+//   // console.log(i);
+//   // console.log('---');
+//   sum += e;
+// })
+// console.log(sum);
+// console.log(res);
+
+
+
+// 把数组里面 大于 2000 的数字筛选出来
+// var arr = [3000,5000,100,80,99,2500];
+// 思路： 遍历数组判断每个元素是否大于2000,如果大于就拿出来，用一个新的数组，装起来
+// var arr2 = [];
+// for(var i =0; i < arr.length; i++){
+//   if(arr[i] > 2000){
+//     arr2.push(arr[i]);
+//   }
+// }
+// console.log(arr2);
+
+
+// var arr = [3000,5000,100,80,99,2500];
+// var arr2 = [];
+// arr.forEach(function(e){
+//   if(e > 2000){
+//     arr2.push(e);
+//   }
+// });
+
+
+//filter - 过滤
+// var arr = [3000,5000,100,80,99,2500];
+// var arr2 = arr.filter(function(e,i){
+//   // 返回一个你要筛选的条件
+//   return e > 2000;
+// })
+// console.log(arr2);
+// 该方法可以在任何你想要根据条件进行数组的数据筛选的时候
+// 用法： 数组.filter(function(元素,索引){
+  // return 你的条件
+// })
+
+
+
+
+
+
+// .toString()
+// console.log('abc'.toString());
+// console.log(true.toString());
+// console.log((123).toString());
+// console.log(null.toString());
+
+
+
+// 如果使用一个数字，调用方法
+// (123).toString();
+/*
+  其实会有一个过程：
+    var obj = new Number(123);
+    obj.toString();
+    obj = null
+*/
+
+
+/*
+  字符串的常用方法
+*/
+// split 
+/*
+  作用： 根据一个指定的分隔符，把一个字符串分割为数组
+*/
+// var str = '张飞|关羽|刘备|狗蛋';
+// var resArr = str.split('|');
+// console.log(resArr);
+
+// // 其实和这个split反过来，数组会有一个方法，把数组里面的元素，按照一个指定的分隔符连接到一起
+// // join 加入 - 可以把数组用一个分隔符连接成为一个字符串
+// var res = resArr.join('^');
+// console.log(res);
+
+
+
+// indexOf
+//     查找 某个字符 在字符串里面的位置，如果有就是 非-1的整数，如果没有就是-1
+//       字符串.indexOf(要找的字符,从哪里开始找)
+
+
+// var arr = 'abcdefabcdef';
+// 看看字符串中是否包含h字符
+// var index = arr.indexOf('h');
+// console.log(index);// -1 代表没有这个字符
+// // 查找 c 是否存在 // 如果不是-1，就是存在
+// var i = arr.indexOf('c');
+// console.log(i);
+// // 看看 c 在字符串里面有多少个
+// var ind = arr.indexOf('c',i+1);
+// console.log(ind);
+
+
+// substring
+// var str = '0123456789';
+// // 想要把里面的345拿出来
+// var res = str.substring(3,6)
+// console.log(res);
+
+// var str = 'abcdefghijk';
+// // 把 cde 拿出来
+// // var res = str.substring(2,5);
+// var res = str.substring(2);
+// console.log(res);
+
+
+
+</script>
+</html>

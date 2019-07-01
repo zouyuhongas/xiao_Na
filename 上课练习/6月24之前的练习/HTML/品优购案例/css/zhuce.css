@@ -1,0 +1,101 @@
+.logo{
+    height: 80px;
+    padding-top:21px;
+    font-size: 0;
+    border-bottom: 2px solid #b1191a;
+}
+.logo h1 a{
+    display: block;
+    height: 80px;
+    background: url('../images/logo.png') no-repeat;
+}
+
+
+/* 登录部分 */
+.nav{
+    height: 520px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+}
+.new_user{
+    background: #ececec;
+    height: 40px;  
+}
+.new_user span{
+    padding: 10px 10px;
+}
+.new_user span:nth-child(1){
+    font-size: 16px;
+    font-weight: 500;
+    color: #333333;
+}
+.new_user span:nth-child(2) a{
+    color: #c81623;
+    font-size: 13px;
+}
+
+
+
+
+.user_info{
+    width: 555px;
+    margin: 54px auto;
+}
+.user_info tr input{
+    border: 1px solid #ccc;
+    width: 240px;
+    height: 34px;
+}
+.user_info tr td{
+    font-size: 14px;
+}
+
+
+.check{
+    padding:44px 239px 45px 87px;
+}
+
+
+.finish{
+    height: 34px;
+    width: 200px;
+    background: #c81623;
+    margin: 0 87px;
+    text-align: center;
+}
+.finish a{
+    color: white;
+    font-size: 16px;
+    
+    line-height: 34px;
+}
+
+
+
+
+
+
+
+.footer_copy{
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+.footer_copy li{
+    float: left; 
+}
+.footer_copy ul{
+    width: 980px;
+    margin: 17px auto;
+}
+.footer_copy ul li.line{
+    height: 12px;
+    width: 1px;
+    background: #ccc;
+    margin: 0 14px;
+}
+.footer_copy p{
+    text-align: center;
+    height: 22px;
+}
+
+

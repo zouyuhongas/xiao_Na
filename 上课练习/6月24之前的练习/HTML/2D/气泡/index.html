@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .one{
+            height: 120px;
+            width: 300px;
+            /* background: #036;*/
+            margin: 30px auto;
+            background: url('../images/paopao.png') no-repeat left top,
+                        url('../images/paopao.png') no-repeat left bottom,
+                        #036;
+
+                        transition: background 1s;
+        }
+        .one:hover{
+            background: url('../images/paopao.png') no-repeat left bottom,
+                        url('../images/paopao.png') no-repeat left top,
+                        #036;
+        }
+    </style>
+</head>
+<body>
+    <div class="one">
+
+    </div>
+</body>
+</html>

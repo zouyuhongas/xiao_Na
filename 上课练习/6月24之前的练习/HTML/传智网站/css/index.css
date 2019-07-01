@@ -1,0 +1,242 @@
+body{
+    background: #f3f3f3
+}
+
+
+.header{
+    background: #055c92;
+    height: 38px;
+}
+.header .header_black ul li{
+    float: left;
+    color: white;
+    height: 38px;
+    line-height: 38px;
+}
+.header_black ul li a:hover{
+    color: red;
+}
+.header_black ul li.line{
+    height: 12px;
+    width: 1px;
+    border: 1px solid white;
+    margin: 12px 7px;
+}
+.header_black ul li a{
+    color: white;
+    padding-left:  10px;
+}
+.teach{
+    color: white;
+    height: 38px;
+    line-height: 38px;
+}
+.teach span:nth-child(2){
+    margin-left: 10px; 
+}
+
+
+.logo{
+    background: white;
+}
+
+.logo .itcast h1 a{
+    display: block;
+    width: 166px;
+    height: 56px;
+    background: url('../images/logo.png') no-repeat;
+    font-size: 0
+}
+.logo .itcast{
+    padding-top: 28px;
+}
+
+.logo .itcast_nav{
+    padding-top: 48px;
+    padding-left: 63px;
+}
+.logo .itcast_nav ul li{
+    float: left;
+    font-size: 16px;
+    padding-right: 25px;
+}
+.itcast_nav ul li a{
+    color: #333333;
+}
+.itcast_nav  li a:hover{
+    color: red;
+}
+
+
+
+.main_nav{
+    margin-top: 30px;
+}
+.main_nav .main_img{
+    border: 1px solid #5ca6c1;
+}
+.main_nav .main_img h2 a{
+    display: block;
+    height: 400px;
+    width: 950px;
+    background: url('../images/banner.jpg') no-repeat;
+    font-size: 0;
+}
+
+
+.main_info{
+    width: 232px;
+    height: 400px;
+    border: 1px solid #e0e0e0;
+    margin-left: 10px;
+}
+.main_info .info{
+    width: 232px;
+    height: 45px;
+    background: #055c92;
+    color: white;
+    font-size: 18px;
+    line-height: 45px;
+    text-align: center;
+}
+.main_info .price{
+    padding:26px 0; 
+    position: relative;
+}
+.price ul{
+    position: absolute;
+    top: 15px;
+    right: 12px;
+    color: #055c92;
+}
+.price ul li{
+    padding:11px 0;
+}
+.price ul li a{
+    margin-left: 5px;
+    font-size: 12px;
+}
+.price ul li a:hover{
+    color: red;
+}
+
+
+
+
+.web_nav{
+    height: 350px;
+    width: 1200px;
+    margin-top: 50px;
+}
+.mobile{
+    display: block;
+    height: 350px;
+    width: 232px;
+    background: #f5717c;
+    position: relative;
+}
+.mobile a img{
+    position: absolute;
+    top: 116px;
+    left: 33px;
+}
+.mobile a h2{
+    margin-top: 35px;
+    margin-left: 20px;
+    font-size: 25px;
+    height: 35px;
+    color: #fef6f6;
+}
+.mobile a span{
+    margin-top: 35px;
+    margin-left: 20px;  
+    font-size: 15px;
+    color: #fef6f6;
+}
+
+.lesson{
+    margin-left: 10px;
+}
+.lesson ul{
+    list-style: none;
+}
+.lesson ul:nth-child(2){
+    margin-top:  10px;
+}
+.lesson ul li{
+    float: left;
+    width: 232px;
+    height: 170px;
+    background: #ffffff;
+    margin-right:10px; 
+}
+.lesson ul li:nth-last-child(1){
+    margin-right: 0;
+}
+.lesson ul li a{
+    position: absolute;
+    top: 40px;
+    left: 70px;
+    /* text-align: center; */
+}
+.lesson li a p{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 16px;
+}
+
+
+
+.footer{
+    height: 485px;
+    background: white;
+    margin-top: 105px;
+}
+.footer_nav{
+    padding-top: 55px;
+}
+.footer_nav dl{
+    float: left;
+    width: 170px;
+    font-size: 16px;
+}
+.footer_nav dl dt{
+    height: 32px;
+}
+.footer_nav  dl dd{
+    height: 25px;
+    color: #8d8d8d;
+}
+.footer_nav{
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ccc;
+}
+.friend h2{
+    padding: 22px 0;
+    color: black;
+}
+
+.friend a{
+    float: left;
+    display: block;
+    padding-right: 10px;
+    height: 26px;
+    font-size: 12px;
+}
+.friend{
+    padding-bottom: 40px;
+    border-bottom: 1px solid #ccc;
+}
+
+.copy{
+    padding-top: 30px;
+}
+.copy img{
+    margin-right: 30px;
+}
+
+.copy p{
+    height: 25px;
+    
+}
+

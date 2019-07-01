@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            height: 460px;
+            width: 1226px;
+            background: url('../小米网站/img/phone.jpg') no-repeat;
+            margin: 0 auto;
+            position: relative;
+        }
+        .box .left{
+            float: left;
+            height: 70px;
+            width: 40px;
+            background: url('./img/icon-slides.png') no-repeat;     
+            background-position: -83px 0px;
+            position:absolute;
+            top: 50%;
+            top: 180px;
+        }
+        .box .left:hover{
+            background: url('./img/icon-slides.png') no-repeat;
+            background-position: 0 0;
+        }
+        .box .right{
+            float: right;
+            height: 70px;
+            width: 40px;
+            background: url('./img/icon-slides.png') no-repeat;
+            background-position: -130px 0;
+            position:absolute;
+            top: 50%;
+            top: 180px;     
+            left: 1186px;   
+        }
+        .box .right:hover{
+            background: url('./img/icon-slides.png') no-repeat;
+            background-position: -43px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="left"></div>
+        <div class="right"></div>
+        <div class="bottom"></div>
+    </div>
+</body>
+</html>

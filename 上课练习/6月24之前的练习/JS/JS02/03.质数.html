@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>判断质数</title>
+</head>
+
+<body>
+
+</body>
+
+<script>
+  var m = parseFloat(prompt("请输入数字:"));
+  var flag = true;
+  for (var i = 2; i < m - 1; i++) {
+    if (m % i === 0) {
+      flag = false;
+      break;
+    }
+  }
+  if (flag == true) {
+    alert("m是一个质数");
+  } else {
+    alert("m不是一个质数");
+  }
+</script>
+
+</html>

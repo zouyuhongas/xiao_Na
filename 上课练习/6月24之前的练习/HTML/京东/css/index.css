@@ -1,0 +1,363 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+input {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+img {
+  display: block;
+  width: 100%;
+}
+ul {
+  list-style: none;
+}
+.clearfix::after {
+  display: block;
+  content: '.';
+  clear: both;
+  visibility: hidden;
+  height: 0;
+  line-height: 0;
+}
+.font_col {
+  color: #c91523;
+}
+.view {
+  /* 京东头部部分 */
+  background: #f5f5f5;
+  /* 京东轮播图 */
+}
+.view .header {
+  height: 40px;
+  background: #c91523;
+  display: flex;
+}
+.view .header .logo {
+  width: 70px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.view .header .logo h1 {
+  display: flex;
+}
+.view .header .logo h1 a {
+  display: block;
+  width: 56px;
+  height: 20px;
+  font-size: 0;
+  background-image: url('../images/jd-sprites.png');
+  background-repeat: no-repeat;
+  background-position: 0 -110px;
+  background-size: 200px 200px;
+}
+.view .header .search {
+  flex: 1;
+  padding: 5px 0;
+  position: relative;
+}
+.view .header .search input {
+  border-radius: 15px;
+  height: 100%;
+  width: 100%;
+  text-indent: 25px;
+}
+.view .header .search::after {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url('../images/jd-sprites.png');
+  background-repeat: no-repeat;
+  background-position: -60px -110px;
+  background-size: 200px 200px;
+  position: absolute;
+  left: 5px;
+  top: 10px;
+}
+.view .header .login {
+  height: 40px;
+  width: 50px;
+  text-align: center;
+  line-height: 40px;
+  color: white;
+}
+.view .nav {
+  display: flex;
+  flex-wrap: wrap;
+  background: white;
+}
+.view .nav li {
+  float: left;
+  width: 25%;
+  padding-top: 5px;
+  display: flex;
+  justify-content: space-around;
+}
+.view .nav li a {
+  text-align: center;
+}
+.view .nav li a img {
+  width: 50%;
+  margin: 0 auto;
+}
+.view .hand_kill {
+  padding-left: 10px;
+}
+.view .hand_kill .kill_title {
+  display: flex;
+  position: relative;
+}
+.view .hand_kill .kill_title .kill {
+  padding-left: 10px;
+  color: #c91523;
+}
+.view .hand_kill .kill_title .timer {
+  width: 18px;
+  height: 22px;
+  background-image: url('../images/jd-sprites.png');
+  background-repeat: no-repeat;
+  background-position: -84px -110px;
+  background-size: 200px 200px;
+}
+.view .hand_kill .kill_title .time {
+  padding-left: 20px;
+}
+.view .hand_kill .kill_title .time span {
+  background: #000;
+  color: white;
+}
+.view .hand_kill .kill_title .time span:nth-child(3n) {
+  background: #fff;
+  color: #000;
+}
+.view .hand_kill .kill_title a {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  width: initial;
+  font-size: 14px;
+}
+.view .hand_kill .kill_content li {
+  float: left;
+  width: 33.3333%;
+  text-align: center;
+  position: relative;
+  background: white;
+}
+.view .hand_kill .kill_content li a {
+  text-align: center;
+}
+.view .hand_kill .kill_content li a img {
+  width: 90%;
+  margin: 0 auto;
+}
+.view .hand_kill .kill_content li .kill_tip {
+  position: absolute;
+  top: 40%;
+  left: 60%;
+  display: block;
+  width: 46px;
+  height: 28px;
+  background: #fdb60a;
+  color: white;
+  border-radius: 50%;
+  line-height: 28px;
+}
+.view .festival {
+  position: relative;
+}
+.view .festival .small_img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.view .festival .small_img a {
+  float: left;
+  width: 50%;
+}
+.view .festival .small_img a img {
+  width: 95%;
+  margin: 0 auto;
+}
+.view .product_show a {
+  float: left;
+  width: 50%;
+}
+.view .product_show a:nth-child(-n+3) {
+  width: 33.333%;
+}
+.view .banner img {
+  margin: 0 5px 0 5px;
+}
+.view .market {
+  background: #fff;
+}
+.view .market .market_title h4 {
+  color: #c91523;
+  padding: 10px 10px;
+  font-size: 18px;
+}
+.view .market .market_content a {
+  float: left;
+  width: 50%;
+}
+.view .market .market_content a:nth-child(2) {
+  margin-bottom: 1px;
+}
+.view .theme {
+  background: #fff;
+}
+.view .theme .street h4 {
+  color: #c91523;
+  padding: 10px 10px;
+  font-size: 18px;
+}
+.view .theme .theme_content a {
+  float: left;
+  width: 25%;
+}
+.view .theme .theme_content a:nth-child(-n+2) {
+  width: 50%;
+}
+.view .theme .theme_content a:nth-child(3),
+.view .theme .theme_content a:nth-child(4) {
+  margin-bottom: 1px;
+}
+.view .recommond {
+  padding-bottom: 10px;
+}
+.view .recommond .recommond_title h4 {
+  color: #c91523;
+  padding: 10px 10px;
+  font-size: 18px;
+}
+.view .recommond .recommond_content a {
+  float: left;
+}
+.view .recommond .recommond_content a:nth-child(1) {
+  width: 40%;
+}
+.view .recommond .recommond_content a:nth-child(2),
+.view .recommond .recommond_content a:nth-child(3) {
+  width: 30%;
+}
+.view .do_you_like {
+  background: #fff;
+}
+.view .do_you_like .like_title {
+  display: flex;
+  justify-content: space-between;
+}
+.view .do_you_like .like_title h4 {
+  padding: 0 5px;
+  font-weight: 600;
+  font-size: 16px;
+}
+.view .do_you_like .like_title img {
+  display: inline;
+  vertical-align: middle;
+}
+.view .do_you_like .like_content li {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+.view .do_you_like .like_content li .content_title {
+  display: flex;
+  justify-content: space-between;
+}
+.view .do_you_like .like_content li .content_title a {
+  border: 1px solid #ccc;
+  font-size: 13px;
+}
+.view .do_you_like .like_content li .content_pro img {
+  width: 80%;
+  margin: 0 auto;
+}
+.view .do_you_like .like_content li .content_pro p {
+  height: 40px;
+  overflow: hidden;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+.view footer {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.view footer .more {
+  height: 40px;
+  line-height: 40px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.view footer .footer_bar {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+.view footer .footer_bar a {
+  width: 25%;
+}
+.view footer .app {
+  display: flex;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+.view footer .app a {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.view footer .app a span:nth-child(1) {
+  width: 33px;
+  height: 33px;
+  background-image: url('../images/jd-sprites.png');
+  background-repeat: no-repeat;
+  background-position: -120px -70px;
+  background-size: 200px 200px;
+}
+.view footer .app a:nth-child(2) span:nth-child(1) {
+  background-position: -40px -70px;
+  background-size: 200px 200px;
+}
+.view footer .app a:nth-child(3) span:nth-child(1) {
+  background-position: -80px -70px;
+  background-size: 200px 200px;
+}
+.view footer .footer_copy {
+  padding: 15px 0;
+}
+.view .jd {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background: #fff;
+}
+.view .jd a {
+  float: left;
+  width: 20%;
+  height: 50px;
+}
+.view .jd a img {
+  width: 57px;
+  margin: 0 auto;
+}
+.box1 {
+  height: 500px;
+}

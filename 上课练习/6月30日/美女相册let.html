@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        width: 800px;
+        margin: 100px auto;
+    }
+    img{
+        width: 100%;
+    }
+
+
+</style>
+<body>
+    <div class="box">
+        <div class="row">
+                <input type="button" value="按钮1" >
+                <input type="button" value="按钮2" >
+                <input type="button" value="按钮3" >
+                <input type="button" value="按钮4" >
+                <input type="button" value="按钮5" >
+        </div>
+        <div class="row">
+            <img src="./images/01.jpg" id="img" alt="">
+        </div>
+ 
+
+
+    </div>
+</body>
+<script>
+
+/*     var btns = document.getElementsByTagName('input');
+    var img = document.getElementById('img');
+    for(let i = 0 ; i< btns.length; i++){
+        btns[i].onclick = function (){
+            img.src='./images/0'+(i+1) +'.jpg'
+        }
+    } */
+
+
+        // var btns = document.getElementsByTagName('input');
+        // var img = document.getElementById('img');
+        // for(let i = 0; i<btns.length;i++){
+        //     btns[i].onclick = function(){
+        //         img.src='./images/0'+ (i+1) +'.jpg'
+        //     }
+        // }
+
+
+        
+
+            var btns = document.getElementsByTagName('input');
+            var img = document.getElementById('img');
+            for(let i = 0;i<btns.length;i++){
+                btns[i].onclick = function(){
+                    img.src='./images/0'+(i+1)+'.jpg'
+                }
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</html>

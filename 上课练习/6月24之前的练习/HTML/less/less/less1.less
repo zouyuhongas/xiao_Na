@@ -1,0 +1,38 @@
+
+@color:red;
+@fontsize:30px;
+
+.box{
+    width: 600px;
+    height: 600px;
+    background: @color;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.box{
+    .father{
+    }
+    .son{
+        width: 200px;
+        height: 200px;
+        background: green;
+        
+    }
+}
+
+
+.box{
+    .father{
+        .son{
+            p{
+                font-size: @fontsize;
+                color: aqua;
+            }
+        }
+    }
+}
+@import './base.less';
+
+

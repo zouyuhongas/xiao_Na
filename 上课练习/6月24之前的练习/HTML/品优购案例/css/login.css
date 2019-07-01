@@ -1,0 +1,90 @@
+.w{
+    width: 1200px;
+    margin: auto;
+}
+.header{
+    width: 1200px;
+    height: 65px;
+    padding-top: 17px;
+    margin-top: 50px;
+}
+
+.login{
+    height: 486px;
+    background: #7e01ff;
+    position: relative;
+}
+
+.user{
+    height: 360px;
+    width: 378px;
+    background: #fff;
+    position: absolute;
+    top: 60px;
+    left: 900px;
+}
+
+
+.user_box{
+    padding: 22px 37px;
+}
+.user_box ul {
+    height: 20px;
+}
+ .user_box ul li {
+     float: left;
+     font-size: 18px;
+     font-weight: 400;
+ }
+ .user_box ul li.line{
+     height: 20px;
+     width: 2px;
+     background: #ededed;
+ }
+ .user_box ul li:nth-child(1){
+     padding-right: 67px;
+ }
+ .user_box ul li:nth-last-child(1){
+    padding-left: 85px;
+}
+
+
+.user_box .advise{
+    width: 300px;
+    height: 24px;
+    border: 2px solid #f5eecf;
+    background: #fffdee;
+    margin-top: 20px;
+    text-indent: 1em;
+    text-align: left;
+    line-height: 24px;
+}
+.user_info .email{
+    height: 34px;
+    width: 36px;
+    background: #ccc;
+    margin-top: 10px;
+}
+.user_box .user_info input[type="text"]{
+    width: 260px;
+    height: 32px;
+    border: 1px solid #3aa2e4;
+    margin-top: 10px;
+}
+.user_box .user_info input[type="password"]{
+    width: 299px;
+    height: 32px;
+    border: 1px solid #3aa2e4;
+    margin: 17px 0;
+}
+.user_box .user_info input[type="checkbox"]{
+    vertical-align: middle;
+}
+.user_info label{
+    color: #b3b3b3;
+}
+.user_info a{
+    padding-right: 10px;
+    font-weight: 600;
+    color: #333333;
+}

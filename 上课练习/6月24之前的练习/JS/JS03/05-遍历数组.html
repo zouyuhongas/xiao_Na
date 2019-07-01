@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+<script>
+  // 一个数组，存储着好多个数字
+  var arr = [1,9,14,87,33,21,15];
+  // 把里面的所有的数字相加起来
+  // var sum = arr[0] + arr[1] + arr[2] + arr[3] + arr[4] + arr[5];
+  // console.log(sum);
+
+  // 使用循环把每个数据相加
+  // var sum = 0;
+  // for(var i = 0; i <= 5; i++){
+  //   sum += arr[i];
+  // }
+  // console.log(sum);
+  // 上面这个使用for循环把数组里面的每个数据都访问一次，称为 —— 遍历
+
+  // var sum = 0;
+  // for(var i = 0; i <= arr.length - 1; i++){
+  //   sum += arr[i];
+  // }
+  // console.log(sum);
+
+  var sum = 0;
+  for(var i = 0; i < arr.length; i++){
+    sum += arr[i];
+  }
+  console.log(sum);
+
+
+  // 数组的长度
+  // console.log(arr.length);
+</script>
+</html>

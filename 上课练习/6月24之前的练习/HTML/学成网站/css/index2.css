@@ -1,0 +1,57 @@
+/* 设置版心部分*/
+.w{
+    width: 1200px;
+    margin: auto;
+}
+body{
+    background: #f4f5f9;
+}
+.header{
+    height: 70px;
+    padding-top: 30px;
+}
+.header .logo a{
+    display: block;
+    height: 41px;
+    width: 200px;
+    font-size: 0;
+    background: url('../images/logo.png') no-repeat;
+}
+.header .header_nav{
+    margin-left: 70px;
+}
+.header .header_nav li{
+    float: left;
+    padding: 10px 12px;
+    font-size: 18px;
+    margin-right: 26px;
+}
+.header .header_nav li:hover{
+    border-bottom: 2px solid #00a4ff;
+}
+
+.header .header_search{
+    width: 410px;
+    height: 40px;
+    margin-left: 60px;
+    margin-right: 30px;
+}
+.header_search input[type="text"]{
+    width: 358px;
+    height: 38px;
+    border: 1px solid #00a4ff;
+    text-indent: 1em;
+}
+
+
+ .header .header_info{
+
+}
+.header_info a img{
+    vertical-align: middle;
+    border-radius: 50%;
+}
+.header_info a{
+    font-size: 12px;
+    color: #666;
+}

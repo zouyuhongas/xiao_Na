@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var h = 100;
+        var sum =  0;
+        for(var i = 1 ; i < 10 ; i ++){
+            sum = h + sum;
+            h /= 2;
+            if(i === 9 ){
+                document.write("第十次:" + sum + "<br />第十次经过的米数:" + h );
+            }
+            sum += h;
+        }
+    </script>
+</body>
+</html>

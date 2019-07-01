@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .main {
+      width: 800px;
+      margin: 100px auto;
+    }
+    img {
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main">
+    <div class="row">
+      <input type="button" value="美女1" data-src="./images/01.jpg">
+      <input type="button" value="美女2" data-src="./images/02.jpg">
+      <input type="button" value="美女3" data-src="./images/03.jpg">
+      <input type="button" value="美女4" data-src="./images/04.jpg">
+      <input type="button" value="美女5" data-src="./images/05.jpg">
+    </div>
+    <div class="row"><img src="./images/01.jpg" alt=""></div>
+  </div>
+</body>
+<script>
+/*
+  效果：
+    点击一个按钮，切换一张和按钮对应的图片
+
+  思路1： 给每个按钮注册点击事件，点击美女1，就修改图片的src是01.jpg，点击美女2，就修改图片的src是01.jpg - 自己做
+  思路2:
+    1.根据标签名获取到所有的按钮
+    2.给每个按钮注册点击事件
+    3.点击对应的按钮，切换对应的图片
+*/
+
+/*
+  get 获取
+  Elements  多个元素
+  By 根据
+  TagName 标签名
+*/
+// 根据标签名获取所有的按钮
+// document.getElementsByTagName(标签名);
+// 返回值是一个 ： HTMLCollection 对象 - 伪数组 - 具备数组的属性，不具备数组的方法
+var btns = document.getElementsByTagName('input');
+// 还要获取图片
+var img = document.getElementsByTagName('img');
+// console.log(btns);// 伪数组
+// btns.push(123);
+// 注册点击事件
+// 如果要一个一个的注册，太复杂
+// 使用for循环来实现
+for(var i =0; i < btns.length;i++){
+  btns[i].onclick = function(){
+    // 先得到元素上面的自定义属性 data-src
+    // this 在事件处理程序中，指向事件源 - 触发事件的对象叫事件源
+    // console.log(this);
+    var src = this.dataset.src;
+    // console.log(src);
+    // 把图片的src修改就可以了
+    img[0].src= src;
+  }
+}
+</script>
+</html>
